@@ -1,0 +1,198 @@
+body{
+ background: #5b3e31;
+ background-image: url("chx-marsala.jpg");
+ background-repeat: no-repeat;
+ background-size: 85%;
+ background-position: center;
+
+ 
+}
+
+
+
+
+.nav-header{
+  color:#d48893;
+  font-family: Snell Roundhand,cursive;
+  font-weight:bold;
+  font-size:xx-large;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  max-width: fit-content;
+  padding-left: 3%;
+  text-shadow: 2px 2px #211d1b
+  
+}
+
+
+
+
+  @import url('https://fonts.googleapis.com/css?family=Oswald:500');
+  .back{
+   
+  }
+  
+  nav{
+    width: 100%;
+    position: fixed;
+    top:50px;
+    text-align:center;
+    
+  }
+  nav a{
+    font-family: 'Oswald', sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#211d1b;
+    margin:0 15px;
+    font-size:16px;
+    letter-spacing:1px;
+    position:relative;
+    display:inline-block;
+  }
+  nav a:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background:#EED9c4;
+    top:47%;
+    animation:out 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  }
+  
+  nav a:hover:before{
+    animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
+  
+  }
+  @keyframes in{
+    0%{
+      width: 0;
+      left:0;
+      right:auto;
+    }
+    100%{
+      left:0;
+      right:auto;
+      width: 100%;
+    }
+  }
+  @keyframes out{
+    0%{
+      width:100%;
+      left: auto;
+      right: 0;
+    }
+    100%{
+      width: 0;
+      left: auto;
+      right: 0;
+    }
+  }
+  @keyframes show{
+    0%{
+      opacity:0;
+      transform:translateY(-10px);
+    }
+    100%{
+      opacity:1;
+      transform:translateY(0);
+    }
+  }
+  
+  @for $i from 1 through 5 {
+    nav a:nth-child(#{$i}){
+      animation:show .2s #{$i*0.1+1}s ease 1 both;
+    }
+  }
+  
+
+
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: Snell Roundhand,cursive;
+  font-size:100px ;
+  color: #EED9c4;
+  text-shadow: 2px 2px #042f10;
+}
+
+
+
+.online{
+color: #d48893;
+margin-left: 20%;
+max-width: fit-content;
+
+
+
+}
+
+
+.operations{
+  display:flex;
+  justify-content: baseline;
+  position: absolute;
+  top: 90%;
+  right: 10%;
+  margin: 15px;
+  background-color: #5b3e31;
+  border-radius: 25px;
+  
+  
+}  
+
+.hours{
+  display: grid;
+  color: #fffafa;
+  padding: 8px;
+  text-align: center;
+  list-style: none;
+  border-radius: 10px;
+  font-weight: lighter;
+  font-family: helvetica;
+  text-shadow: 2px 2px #fffafa;
+  
+  
+}
+
+
+.grid{
+  display:flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 65%;
+  left: 0%;
+
+
+}
+.grid-items1{
+  text-align: center;
+  justify-content: space-between;
+  max-width:600px;
+  padding:10px;
+  margin-left:25%;
+  color: #211d1b;
+  border-radius: 35px;
+  font-family: Helvetica;
+  background-color: #EED9c4;
+  text-shadow: 1px 1px #fffafa;
+  line-height: 20px;
+}
+li{
+  padding: 5px;
+  color: #fffafa;
+  font-weight: lighter;
+  font-family: Helvetica;
+  text-shadow: 1px 1px #042f10;
+}
+
+
+.reso-box{
+  position: absolute;
+  top: 100%;
+  left: 30%;
+
+
+}
